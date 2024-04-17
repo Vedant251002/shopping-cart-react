@@ -1,0 +1,159 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "vedant",
+      "password": "vedant",
+      "saved_products": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "2",
+      "name": "kavina",
+      "password": "kavina",
+      "saved_products": []
+    },
+    {
+      "id": "3",
+      "name": "rajan",
+      "password": "rajan",
+      "saved_products": []
+    },
+    {
+      "id": "4",
+      "name": "bhavin",
+      "password": "bhavin",
+      "saved_products": []
+    },
+    {
+      "id": "5",
+      "name": "yash",
+      "password": "yash",
+      "saved_products": []
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop Pro X1",
+      "price": 1000,
+      "description": "Powerful laptop with advanced features.",
+      "rating": 5,
+      "category": "Electronics"
+    },
+    {
+      "id": "2",
+      "name": "Smartwatch TechMaster 3000",
+      "price": 300,
+      "description": "State-of-the-art smartwatch with various functions.",
+      "rating": 4.5,
+      "category": "Wearables"
+    },
+    {
+      "id": "3",
+      "name": "Ultra HD Smart TV",
+      "price": 1200,
+      "description": "Immersive entertainment with ultra-high definition.",
+      "rating": 4.8,
+      "category": "Electronics"
+    },
+    {
+      "id": "4",
+      "name": "Wireless Bluetooth Earbuds",
+      "price": 80,
+      "description": "Ergonomic earbuds with high-quality sound.",
+      "rating": 4.3,
+      "category": "Audio"
+    },
+    {
+      "id": "5",
+      "name": "Digital Camera Elite X",
+      "price": 600,
+      "description": "Professional-grade digital camera for stunning photos.",
+      "rating": 4.7,
+      "category": "Electronics"
+    },
+    {
+      "id": "6",
+      "name": "Gaming Console Xplorer 5000",
+      "price": 400,
+      "description": "Next-gen gaming console for an immersive gaming experience.",
+      "rating": 4.9,
+      "category": "Gaming"
+    },
+    {
+      "id": "7",
+      "name": "Home Security System Guardian 360",
+      "price": 800,
+      "description": "Comprehensive home security with 360-degree coverage.",
+      "rating": 4.6,
+      "category": "Electronics"
+    },
+    {
+      "id": "8",
+      "name": "Virtual Reality Headset VR-Xperience",
+      "price": 500,
+      "description": "Immerse yourself in virtual worlds with this advanced VR headset.",
+      "rating": 4.8,
+      "category": "Wearables"
+    },
+    {
+      "id": "9",
+      "name": "Fitness Tracker FitPro Max",
+      "price": 120,
+      "description": "Track your fitness goals with this high-tech fitness tracker.",
+      "rating": 4.2,
+      "category": "Wearables"
+    },
+    {
+      "id": "10",
+      "name": "Smart Home Assistant EchoSphere",
+      "price": 150,
+      "description": "Voice-controlled smart home assistant for convenience.",
+      "rating": 4.5,
+      "category": "Appliances"
+    },
+    {
+      "id": "11",
+      "name": "Portable Power Bank ChargeTech 20000",
+      "price": 50,
+      "description": "Charge your devices on the go with this powerful power bank.",
+      "rating": 4,
+      "category": "Appliances"
+    },
+    {
+      "id": "12",
+      "name": "High-Performance Graphics Card GTX Titan Pro",
+      "price": 700,
+      "description": "Upgrade your PC gaming experience with this top-tier graphics card.",
+      "rating": 4.9,
+      "category": "Gaming"
+    },
+    {
+      "id": "13",
+      "name": "Wireless Noise-Canceling Headphones",
+      "price": 150,
+      "description": "Immerse yourself in music with these high-quality noise-canceling headphones.",
+      "rating": 4.6,
+      "category": "Audio"
+    },
+    {
+      "id": "14",
+      "name": "Smart Refrigerator",
+      "price": 2000,
+      "description": "A futuristic refrigerator with smart features for a connected kitchen experience.",
+      "rating": 4.7,
+      "category": "Appliances"
+    },
+    {
+      "id": "15",
+      "name": "Electric Scooter CommuteMaster 100",
+      "price": 300,
+      "description": "Efficient and eco-friendly electric scooter for your daily commute.",
+      "rating": 4.3,
+      "category": "Appliances"
+    }
+  ]
+}
