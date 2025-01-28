@@ -33,7 +33,6 @@ const ProductDetail = () => {
         const updatedUser = {...user}
         updatedUser.saved_products.push(+params.id)
         addToDatabase(updatedUser)
-        console.log(updatedUser);
     }
     
     const addToDatabase = async(user) => {
@@ -94,7 +93,7 @@ const ProductDetail = () => {
             {product && <div className="text-lg ml-10 mt-10">
                 <div className="text-4xl"><label>Name : </label><span>{product.name}</span></div>
                 <div className="mt-8"><label>Description : </label><span>{product.description}</span></div>
-                <div className="mt-4"><label>Price : </label><span>{product.price}</span></div>
+                <div className="mt-4"><label>Price : </label><span>${product.price}</span></div>
                 <div className="mt-2"><label>Rating : </label><span>{product.rating}</span></div>
                 </div>}
 

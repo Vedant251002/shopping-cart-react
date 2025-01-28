@@ -5,8 +5,11 @@
       "name": "vedant",
       "password": "vedant",
       "saved_products": [
-        2,
-        1
+        10,
+        4,
+        11,
+        15,
+        9
       ]
     },
     {
@@ -31,6 +34,12 @@
       "id": "5",
       "name": "yash",
       "password": "yash",
+      "saved_products": []
+    },
+    {
+      "id": "6",
+      "name": "dhairya",
+      "password": "dhairya",
       "saved_products": []
     }
   ],

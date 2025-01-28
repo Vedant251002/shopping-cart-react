@@ -1,40 +1,41 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 const Login = () => {
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
-    const onLogin = async(e) => {
+    const onLogin = async (e) => {
         e.preventDefault();
         const users = await dbCheck();
-        if(users.length === 0) {
+        if (users.length === 0) {
             setError("User not found");
-            return
-        }else if(users.length >0 ){
-            // console.log(users);
-            localStorage.setItem("user_id", users[0].id)
-            navigate('/products')
+            return;
+        } else if (users.length > 0) {
+            localStorage.setItem("user_id", users[0].id);
+            navigate('/products');
         }
-    }
+    };
 
-    const dbCheck = async() => {
+    const dbCheck = async () => {
         try {
             const response = await fetch(`http://localhost:3000/users?name=${name}&password=${password}`);
-            if(!response.ok) {
-                throw new Error()
+            if (!response.ok) {
+                throw new Error();
             }
             const data = await response.json();
-            return data
+            return data;
         } catch (error) {
             console.log(error);
         }
-    }
+    };
+
     const goToProducts = () => {
-        localStorage.setItem('user_id', 'temp')
-        navigate('/products')
-    }
+        localStorage.setItem('user_id', 'temp');
+        navigate('/products');
+    };
 
     return (
         <div className="flex flex-col items-center min-h-screen justify-center bg-blue-100">
@@ -72,8 +73,6 @@ const Login = () => {
             </div>
         </div>
     );
-
 };
 
-
-export default Login
+export default Login;
