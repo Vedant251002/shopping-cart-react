@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
+import ProductCard from "./components/product/ProductCard"
 
 const Cart = () => {
     const [user , setUser] = useState({})
@@ -76,11 +77,11 @@ const Cart = () => {
                 <div className="flex flex-wrap justify-center">
                     {
                         products.length !== 0 ? products.map(product => (
-                            <div key={product.id} className="bg-white shadow-lg rounded-lg m-4 p-4 border border-gray-300 w-64">
-                                <h2 className="font-bold text-xl text-gray-700">{product.name}</h2>
-                                <p className="text-gray-600">Price: ${product.price}</p>
-                                <p className="text-gray-600">Rating: {product.rating}</p>
-                                <button className="mt-4 bg-red-500 text-white font-semibold py-2 px-4 rounded hover:bg-red-600 transition duration-300" onClick={() => deleteProduct(product.id)}>Delete</button>
+                            <div key={product.id} className="m-4">
+                                <ProductCard 
+                                  product={product} 
+                                  onDelete={deleteProduct} 
+                                />
                             </div>
                         )) : (
                             <span className="text-2xl text-gray-600">No products in your cart</span>

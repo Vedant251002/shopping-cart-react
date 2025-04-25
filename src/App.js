@@ -1,44 +1,59 @@
-import { createBrowserRouter,RouterProvider, Navigate } from "react-router-dom";
-import Login from "./login";
-import Product from "./products";
-import {validUserLoader, checkLogin , loginLoader} from "./loaders";
-import ProductDetail from "./productDetail";
-import Cart from "./cart";
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import LoginPage from "./components/auth/LoginPage";
+import ProductPage from "./components/product/ProductPage";
+import ProductDetailPage from "./components/product/ProductDetailPage";
+import CartPage from "./components/cart/CartPage";
+import { fetchCurrentUser } from "./store/slices/authSlice";
+import { isAuthenticated } from "./utils/auth";
+
+// Protected route wrapper
+const RequireAuth = ({ children }) => {
+  if (!isAuthenticated()) {
+    return <Navigate to="/login" />;
+  }
+  return children;
+};
+
+// Define routes
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Navigate to='/login' />,
-    errorElement: <Navigate to='/login' />,
+    element: <Navigate to="/products" />,
+    errorElement: <Navigate to="/login" />,
   },
   {
     path: "/login",
-    element: <Login />,
-    // loader : () => validUserLoader(),
-    loader :  () => loginLoader()
-  }
-  ,
+    element: <LoginPage />,
+  },
   {
     path: "/products",
-    element: <Product />,
-    loader :  () => checkLogin()
+    element: <ProductPage />,
   },
   {
-    path : '/products/:id',
-    element : <ProductDetail />,
-    loader :  () => checkLogin()
+    path: "/products/:id",
+    element: <ProductDetailPage />,
   },
   {
-    path : '/cart',
-    element : <Cart />,
-    // loader : () => validUserLoader(),
-    loader :  () => checkLogin()
-  }
+    path: "/cart",
+    element: (
+      <RequireAuth>
+        <CartPage />
+      </RequireAuth>
+    ),
+  },
 ]);
 
+const App = () => {
+  const dispatch = useDispatch();
+  
+  // Check if user is authenticated on app mount
+  useEffect(() => {
+    dispatch(fetchCurrentUser());
+  }, [dispatch]);
+  
+  return <RouterProvider router={router} />;
+};
 
-const App= () => {
-  return (
-      <RouterProvider router={router} />
-  );
-}
 export default App;

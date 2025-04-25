@@ -5,11 +5,23 @@
       "name": "vedant",
       "password": "vedant",
       "saved_products": [
-        10,
-        4,
-        11,
-        15,
-        9
+        2,
+        1,
+        3
+      ],
+      "cart_items": [
+        {
+          "productId": 2,
+          "quantity": 2
+        },
+        {
+          "productId": 1,
+          "quantity": 3
+        },
+        {
+          "productId": 3,
+          "quantity": 5
+        }
       ]
     },
     {
@@ -47,122 +59,137 @@
     {
       "id": "1",
       "name": "Laptop Pro X1",
-      "price": 1000,
+      "price": 83000,
       "description": "Powerful laptop with advanced features.",
       "rating": 5,
-      "category": "Electronics"
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": "2",
-      "name": "Smartwatch TechMaster 3000",
-      "price": 300,
-      "description": "State-of-the-art smartwatch with various functions.",
+      "name": "Wireless Headphones",
+      "price": 12450,
+      "description": "Noise-canceling headphones with excellent sound quality.",
       "rating": 4.5,
-      "category": "Wearables"
+      "category": "Audio",
+      "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": "3",
-      "name": "Ultra HD Smart TV",
-      "price": 1200,
-      "description": "Immersive entertainment with ultra-high definition.",
-      "rating": 4.8,
-      "category": "Electronics"
+      "name": "Smart Watch",
+      "price": 24900,
+      "description": "Track your fitness and stay connected with this stylish smartwatch.",
+      "rating": 4,
+      "category": "Wearables",
+      "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": "4",
-      "name": "Wireless Bluetooth Earbuds",
-      "price": 80,
-      "description": "Ergonomic earbuds with high-quality sound.",
-      "rating": 4.3,
-      "category": "Audio"
+      "name": "Bluetooth Speaker",
+      "price": 8300,
+      "description": "Portable speaker with amazing sound quality and long battery life.",
+      "rating": 4.2,
+      "category": "Audio",
+      "image": "https://images.unsplash.com/photo-1589003077984-894e133dabab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": "5",
-      "name": "Digital Camera Elite X",
-      "price": 600,
-      "description": "Professional-grade digital camera for stunning photos.",
+      "name": "4K Smart TV",
+      "price": 58100,
+      "description": "Ultra HD Smart TV with built-in streaming apps.",
       "rating": 4.7,
-      "category": "Electronics"
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1593784991095-a205069470b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": "6",
-      "name": "Gaming Console Xplorer 5000",
-      "price": 400,
-      "description": "Next-gen gaming console for an immersive gaming experience.",
-      "rating": 4.9,
-      "category": "Gaming"
+      "name": "Digital Camera",
+      "price": 49800,
+      "description": "Professional-grade digital camera for stunning photos.",
+      "rating": 4.8,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1516961642265-531546e84af2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": "7",
-      "name": "Home Security System Guardian 360",
-      "price": 800,
-      "description": "Comprehensive home security with 360-degree coverage.",
-      "rating": 4.6,
-      "category": "Electronics"
+      "name": "Gaming Console",
+      "price": 41500,
+      "description": "Next-generation gaming console for immersive gameplay.",
+      "rating": 4.9,
+      "category": "Gaming",
+      "image": "https://images.unsplash.com/photo-1605901309584-818e25960a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": "8",
-      "name": "Virtual Reality Headset VR-Xperience",
-      "price": 500,
-      "description": "Immerse yourself in virtual worlds with this advanced VR headset.",
-      "rating": 4.8,
-      "category": "Wearables"
+      "name": "Refrigerator",
+      "price": 74700,
+      "description": "Energy-efficient refrigerator with smart features.",
+      "rating": 4.6,
+      "category": "Appliances",
+      "image": "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": "9",
-      "name": "Fitness Tracker FitPro Max",
-      "price": 120,
-      "description": "Track your fitness goals with this high-tech fitness tracker.",
-      "rating": 4.2,
-      "category": "Wearables"
+      "name": "Vacuum Cleaner",
+      "price": 16600,
+      "description": "Powerful vacuum cleaner for spotless floors.",
+      "rating": 4.3,
+      "category": "Appliances",
+      "image": "https://images.unsplash.com/photo-1558317374-067fb5f30001?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": "10",
-      "name": "Smart Home Assistant EchoSphere",
-      "price": 150,
-      "description": "Voice-controlled smart home assistant for convenience.",
-      "rating": 4.5,
-      "category": "Appliances"
+      "name": "Coffee Maker",
+      "price": 12450,
+      "description": "Automatic coffee maker for perfect brews every time.",
+      "rating": 4.1,
+      "category": "Appliances",
+      "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": "11",
-      "name": "Portable Power Bank ChargeTech 20000",
-      "price": 50,
-      "description": "Charge your devices on the go with this powerful power bank.",
-      "rating": 4,
-      "category": "Appliances"
+      "name": "Tablet Pro",
+      "price": 33200,
+      "description": "Versatile tablet for work and entertainment.",
+      "rating": 4.4,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": "12",
-      "name": "High-Performance Graphics Card GTX Titan Pro",
-      "price": 700,
-      "description": "Upgrade your PC gaming experience with this top-tier graphics card.",
-      "rating": 4.9,
-      "category": "Gaming"
+      "name": "Wireless Earbuds",
+      "price": 8300,
+      "description": "Compact earbuds with crystal-clear sound.",
+      "rating": 4.2,
+      "category": "Audio",
+      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": "13",
-      "name": "Wireless Noise-Canceling Headphones",
-      "price": 150,
-      "description": "Immerse yourself in music with these high-quality noise-canceling headphones.",
-      "rating": 4.6,
-      "category": "Audio"
+      "name": "Air Purifier",
+      "price": 24900,
+      "description": "Clean air for a healthier home environment.",
+      "rating": 4.5,
+      "category": "Appliances",
+      "image": "https://placehold.co/400x400/png?text=Air+Purifier"
     },
     {
       "id": "14",
-      "name": "Smart Refrigerator",
-      "price": 2000,
-      "description": "A futuristic refrigerator with smart features for a connected kitchen experience.",
-      "rating": 4.7,
-      "category": "Appliances"
+      "name": "Fitness Tracker",
+      "price": 6640,
+      "description": "Monitor your fitness goals with this sleek tracker.",
+      "rating": 4,
+      "category": "Wearables",
+      "image": "https://images.unsplash.com/photo-1576243345690-4e4b79b63288?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": "15",
-      "name": "Electric Scooter CommuteMaster 100",
-      "price": 300,
-      "description": "Efficient and eco-friendly electric scooter for your daily commute.",
+      "name": "Electric Toothbrush",
+      "price": 4980,
+      "description": "Advanced oral care with this electric toothbrush.",
       "rating": 4.3,
-      "category": "Appliances"
+      "category": "Appliances",
+      "image": "https://images.unsplash.com/photo-1559305616-3f99cd43e353?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     }
   ]
 }

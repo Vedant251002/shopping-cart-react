@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { productAction } from "./store/productSlice";
+import ProductCard from "./components/product/ProductCard";
 
 const Product = () => {
   const navigate = useNavigate();
@@ -40,10 +41,6 @@ const Product = () => {
   const onLogout = () => {
     localStorage.removeItem("user_id");
     navigate("/login");
-  };
-
-  const toProductDetail = (id) => {
-    navigate(`/products/${id}`);
   };
 
   const onSelectFilter = (e) => {
@@ -205,20 +202,8 @@ const Product = () => {
         <div className="flex flex-wrap justify-center">
           {products.length > 0 &&
             products.map((product) => (
-              <div
-                key={product.id}
-                className="bg-white rounded-lg shadow-lg flex flex-col justify-between m-4 p-4 border border-gray-300 h-72 w-64"
-              >
-                <h2 className="font-bold text-lg">{product.name}</h2>
-                <p className="text-gray-700">Price: ${product.price}</p>
-                <p className="text-gray-700">Rating: {product.rating}</p>
-                <p className="text-gray-700">Category: {product.category}</p>
-                <button
-                  className="mt-4 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
-                  onClick={() => toProductDetail(product.id)}
-                >
-                  Show
-                </button>
+              <div key={product.id} className="m-4">
+                <ProductCard product={product} />
               </div>
             ))}
         </div>
