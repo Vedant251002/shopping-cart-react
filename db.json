@@ -5,22 +5,17 @@
       "name": "vedant",
       "password": "vedant",
       "saved_products": [
-        2,
         1,
         3
       ],
       "cart_items": [
         {
-          "productId": 2,
+          "productId": 1,
           "quantity": 2
         },
         {
-          "productId": 1,
-          "quantity": 3
-        },
-        {
           "productId": 3,
-          "quantity": 5
+          "quantity": 1
         }
       ]
     },
